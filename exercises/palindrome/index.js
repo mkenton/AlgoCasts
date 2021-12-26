@@ -10,7 +10,6 @@
 function palindrome(str) {
     let result;
     let backwards = str.split('').reduce((revStr, char) => char + revStr, '');
-    backwards === str ? result = true : result = false;
-    return result;
+    return backwards === str 
 }
 module.exports = palindrome;
